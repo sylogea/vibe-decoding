@@ -7,4 +7,4 @@ pyyaml
 rouge_score
 sacrebleu
 tqdm
-transformers
+transformers>=4.37.0
