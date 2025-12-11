@@ -1,0 +1,7 @@
+accelerate
+datasets
+numpy
+rich
+torch
+tqdm
+transformers
