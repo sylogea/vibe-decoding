@@ -1,0 +1,38 @@
+{
+  "experiment_id": 3,
+  "task": "PG19 perplexity with vibe-adjusted decoding.",
+  "lambda_values": [
+    -5.0,
+    0.0,
+    1.0,
+    5.0
+  ],
+  "random_seed": 42,
+  "dataset": {
+    "id": "emozilla/pg19",
+    "split": "test",
+    "block_length": 1024,
+    "batch_size": 1,
+    "max_rows": 10
+  },
+  "models": {
+    "Qwen/Qwen2.5-0.5B-Instruct": {
+      "-5.0": 40.42638761,
+      "0.0": 27.15695803,
+      "1.0": 27.64892035,
+      "5.0": 34.71654704
+    },
+    "google/gemma-2-2b-it": {
+      "-5.0": 42.30328442,
+      "0.0": 28.19430395,
+      "1.0": 29.38558296,
+      "5.0": 40.74315816
+    },
+    "meta-llama/Llama-3.1-8B-Instruct": {
+      "-5.0": 19.65790093,
+      "0.0": 14.46022592,
+      "1.0": 14.86251211,
+      "5.0": 19.10308519
+    }
+  }
+}

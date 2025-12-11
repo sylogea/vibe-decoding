@@ -1,0 +1,70 @@
+{
+  "experiment_id": 4,
+  "task": "WikiText-2 perplexity with vibe-adjusted decoding.",
+  "lambda_values": [
+    -5.0,
+    0.0,
+    1.0,
+    5.0
+  ],
+  "random_seed": 42,
+  "dataset": {
+    "id": "Salesforce/wikitext",
+    "config": "wikitext-2-v1",
+    "split": "validation",
+    "max_rows": 100
+  },
+  "models": {
+    "Qwen/Qwen2.5-0.5B-Instruct": {
+      "results": {
+        "-5": 13.86321451,
+        "+0": 9.10442399,
+        "+1": 9.22796758,
+        "+5": 11.16491308
+      },
+      "details": {
+        "timestamp_utc": "2025-12-11T07:14:37.994212Z",
+        "device": "cuda",
+        "seed": 42,
+        "python": "3.12.3",
+        "torch": "2.8.0+cu128",
+        "transformers": "4.57.3",
+        "datasets": "4.4.1"
+      }
+    },
+    "google/gemma-2-2b-it": {
+      "results": {
+        "-5": 24.71628455,
+        "+0": 16.31769991,
+        "+1": 17.10990534,
+        "+5": 23.79154132
+      },
+      "details": {
+        "timestamp_utc": "2025-12-11T07:15:17.444877Z",
+        "device": "cuda",
+        "seed": 42,
+        "python": "3.12.3",
+        "torch": "2.8.0+cu128",
+        "transformers": "4.57.3",
+        "datasets": "4.4.1"
+      }
+    },
+    "meta-llama/Llama-3.1-8B-Instruct": {
+      "results": {
+        "-5": 8.23763478,
+        "+0": 5.38524048,
+        "+1": 5.43492825,
+        "+5": 6.4275099
+      },
+      "details": {
+        "timestamp_utc": "2025-12-11T07:16:20.103498Z",
+        "device": "cuda",
+        "seed": 42,
+        "python": "3.12.3",
+        "torch": "2.8.0+cu128",
+        "transformers": "4.57.3",
+        "datasets": "4.4.1"
+      }
+    }
+  }
+}
